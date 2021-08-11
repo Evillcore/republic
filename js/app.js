@@ -289,10 +289,10 @@ new Swiper('.cooperation__container', {
 new Swiper('.team__container', {
 
 	/* effect: 'fade', */
-	/* autoplay: {
+	autoplay: {
 		delay: 3000,
 		disableOnInteraction: false,
-	}, */
+	},
 
 	observer: true,
 	observeParents: true,
@@ -320,20 +320,20 @@ new Swiper('.team__container', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 10,
 			autoHeight: true,
 		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 10,
+			spaceBetween: 30,
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 30,
+			spaceBetween: 40,
 		},
 		1268: {
 			slidesPerView: 4,
-			spaceBetween: 40,
+			spaceBetween: 50,
 		},
 	},
 
