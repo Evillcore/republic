@@ -164,13 +164,13 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 const da = new DynamicAdapt("max");
 da.init();
 new Swiper('.slider__container', {
-	
+
 	effect: 'fade',
- 	autoplay: {
+	autoplay: {
 		delay: 4000,
 		disableOnInteraction: false,
-	}, 
-	
+	},
+
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
@@ -179,7 +179,7 @@ new Swiper('.slider__container', {
 	speed: 800,
 	/* touchRatio: 0, */
 	//simulateTouch: false,
-	/* loop: true, */
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -227,10 +227,10 @@ new Swiper('.slider__container', {
 new Swiper('.cooperation__container', {
 
 	/* effect: 'fade', */
-		autoplay: {
-			delay: 2000,
-			disableOnInteraction: false,
-		},
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	},
 
 	observer: true,
 	observeParents: true,
@@ -254,7 +254,7 @@ new Swiper('.cooperation__container', {
 		nextEl: '.about__more .more__item_next',
 		prevEl: '.about__more .more__item_prev',
 	},
-	
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -274,7 +274,7 @@ new Swiper('.cooperation__container', {
 			spaceBetween: 50,
 		},
 	},
-	
+
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -285,23 +285,21 @@ new Swiper('.cooperation__container', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
-
-new Swiper('.team__container', {
-
+ new Swiper('.team__slider', {
+	
 	/* effect: 'fade', */
 	autoplay: {
-		delay: 3000,
+		delay: 1000,
 		disableOnInteraction: false,
 	},
-
+	
 	observer: true,
 	observeParents: true,
-	slidesPerView: 4,
+	slidesPerView: 1,
 	spaceBetween: 0,
 	autoHeight: true,
-	speed: 1000,
-	/* slidesPerGroup: 9, */
-	/* touchRatio: 0, */
+	speed: 800,
+	//touchRatio: 0,
 	//simulateTouch: false,
 	loop: true,
 	//preloadImages: false,
@@ -316,7 +314,7 @@ new Swiper('.team__container', {
 		nextEl: '.about__more .more__item_next',
 		prevEl: '.about__more .more__item_prev',
 	},
-
+	
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -325,18 +323,18 @@ new Swiper('.team__container', {
 		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 30,
+			spaceBetween: 20,
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 40,
+			spaceBetween: 20,
 		},
 		1268: {
 			slidesPerView: 4,
-			spaceBetween: 50,
+			spaceBetween: 30,
 		},
 	},
-
+	
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -347,6 +345,8 @@ new Swiper('.team__container', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+
 
 let filtersItems = document.querySelectorAll('.works__item');
 
@@ -383,6 +383,11 @@ if (filtersItems.length > 0) {
 		}
 	}
 };
+
+
+
+
+
 
 
 var ua = window.navigator.userAgent;
